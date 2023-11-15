@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetCode</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="logogr">
+        <img src="logo.PNG" alt="Logo">
+        <p><a class="smooth-scroll" href="#scroll">//Scroll down</a></p>
+    </div>
+ <section id="scroll">
+    <div class="navbar">
+        <nav>
+            <ul>   
+                <li><a class="smooth-scroll" href="#photography">Fotografie</a></li>
+                <li><a class="smooth-scroll" href="#software-development">Softwareentwicklung</a></li>
+                <li><a class="smooth-scroll" href="#web-development">Web-Dev</a></li>
+                <li><a class="smooth-scroll" href="#htl">HTL</a></li>
+                <li><a class="smooth-scroll" href="#donate">Spenden</a></li>
+            </ul>
+        </nav>
+    </div>
+<section id="photography" class="about-us">
+    <h2>Fotografie</h2>
+    <p>Entdecke die Vielfalt der Fotografie, sei es Porträt-, Natur- oder Streetfotografie. Tauche ein in unsere Community, teile deine Werke, erhalte Feedback von Gleichgesinnten und lerne von Experten, um deine kreativen Grenzen zu erweitern.</p>
+    <p>Mit GetCode kannst du nicht nur Techniken erlernen, sondern auch die Leidenschaft für die Fotografie entfachen. Starte deine fotografische Reise noch heute!</p>
+    <p><a href="pages/fotografie.html">Fotografie</a></p>
+</section>
+<section id="software-development" class="about-us">
+    <h2>Softwareentwicklung</h2>
+    <p>Die Welt der Softwareentwicklung erwartet dich! Entdecke die Grundlagen und fortgeschrittene Konzepte der Programmierung. Von der Entwicklung von Anwendungen bis zur Gestaltung benutzerfreundlicher Schnittstellen - bei GetCode lernst du alles, was du brauchst, um in der Softwarewelt erfolgreich zu sein.</p>
+    <p><a href="pages/sew.html">Softwareentwicklung</a></p>
+</section>
+
+<section id="web-development" class="about-us">
+    <h2>Web-Entwicklung</h2>
+    <p>Von HTML und CSS bis zu modernen Frameworks - hier findest du alles, um beeindruckende Webanwendungen zu erstellen. Mach den ersten Schritt in die Welt der Web-Entwicklung mit GetCode!</p>
+    <p><a href="pages/web.html">Fotografie</a></p>
+</section>
+
+<section id="htl" class="about-us">
+    <h2>HTL Wien West</h2>
+    <p>Bist du von der HTL Wien West (IT-Abteilung), dann klicke hier:</p>
+    <p><a href="pages/htl.html">HTL Wien West</a></p>
+</section>
+
+<section id="donate" class="about-us">
+    <h2>Spenden</h2>
+    <p>Unterstütze GetCode und unsere Mission, technisches Wissen zugänglich zu machen. Deine Spende trägt dazu bei, Kurse, Veranstaltungen und Community-Aktivitäten zu verbessern. Gemeinsam können wir eine positive Veränderung in der Welt der Technologie bewirken. Spende noch heute und werde Teil der GetCode-Bewegung!</p>
+    <p><a href="pages/donate.html">Spenden</a></p>
+    <section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollLinks = document.querySelectorAll('.smooth-scroll');
+
+    for (const scrollLink of scrollLinks) {
+        scrollLink.addEventListener('click', smoothScroll);
+    }
+
+    function smoothScroll(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.getElementById(targetId.substring(1));
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+});
+
+</script>
+</body>
+</html>

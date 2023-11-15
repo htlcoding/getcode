@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografie</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="logogr">
+        <h1 id="titel">Fotografie</h1>
+        <p><a class="smooth-scroll" href="#scroll">//Scroll down</a></p>
+    </div>
+ <section id="scroll">
+    <div class="navbar">
+        <nav>
+            <ul>   
+                <li><a class="smooth-scroll" href="#photography">Geschichte</li>
+                <li><a class="smooth-scroll" href="#software-development">Grundlagen</a></li>
+                <li><a class="smooth-scroll" href="#web-development">Übungen Fotosimulator</a></li>
+                <li><a class="smooth-scroll" href="#htl">Zusammengefasst</a></li>
+            </ul>
+        </nav>
+    </div>
+<section id="photography" class="about-us">
+    <h2>Geschichte</h2>
+    <p>.</p>
+    <p>.</p>
+</section>
+<section id="software-development" class="about-us">
+    <h2>Grundlagen</h2>
+    <p>.</p>
+    <p>.</p>
+</section>
+
+<section id="web-development" class="about-us">
+    <h2>Übungen Fotosimulator</h2>
+    <p>.</p>
+    <p>.</p>
+</section>
+
+<section id="htl" class="about-us">
+    <h2>Zusammengefasst</h2>
+    <p>.</p>
+    <p>.</p>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollLinks = document.querySelectorAll('.smooth-scroll');
+
+    for (const scrollLink of scrollLinks) {
+        scrollLink.addEventListener('click', smoothScroll);
+    }
+
+    function smoothScroll(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.getElementById(targetId.substring(1));
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+});
+
+</script>
+</body>
+</html>

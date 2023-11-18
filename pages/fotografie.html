@@ -17,22 +17,273 @@
     <div class="navbar">
         <nav>
             <ul>   
-                <li><a class="smooth-scroll" href="#photography">Geschichte</li>
                 <li><a class="smooth-scroll" href="#software-development">Grundlagen</a></li>
                 <li><a class="smooth-scroll" href="#web-development">Übungen Fotosimulator</a></li>
                 <li><a class="smooth-scroll" href="#htl">Zusammengefasst</a></li>
             </ul>
         </nav>
     </div>
-<section id="photography" class="about-us">
-    <h2>Geschichte</h2>
-    <p>.</p>
-    <p>.</p>
 </section>
 <section id="software-development" class="about-us">
-    <h2>Grundlagen</h2>
-    <p>.</p>
-    <p>.</p>
+    <h2>1.Grundlagen</h2>
+    <section id="software-development" class="about-us">
+        <h2>1.1 Grundlagen</h2>
+        <!-- Slideshow Container -->
+        
+        <div class="slideshow-container">
+            <div class="card">
+                <p><strong>1. </strong>Die Kamera und ihre Teile: <br>Die Kamera hat verschiedene Teile wie die Linse, den Sucher und den Bildschirm. Die Linse ist wie das Auge der Kamera und der Sucher hilft dir, das Bild zu sehen, bevor du es aufnimmst.</p>
+            </div>
+            <div class="card">
+                <p><strong>2. </strong>Belichtung: <br>Belichtung bedeutet, wie viel Licht die Kamera für ein Foto einfängt. Wenn es dunkel ist, muss die Kamera länger belichten, und bei Helligkeit weniger.</p>
+            </div>
+            <div class="card">
+                <p><strong>3. </strong>Blende und Verschlusszeit: <br>Die Blende ist wie das Auge, das sich öffnet und schließt, um mehr oder weniger Licht hereinzulassen. Die Verschlusszeit bestimmt, wie lange die Kamera Licht einfängt.</p>
+            </div>
+            <div class="card">
+                <p><strong>4. </strong>Fokussieren: <br>Du kannst manuell oder automatisch auf ein Objekt fokussieren. Das stellt sicher, dass das, was du fotografierst, scharf ist.</p>
+            </div>
+            <div class="card">
+                <p><strong>5. </strong>Perspektive und Komposition: <br>Experimentiere mit verschiedenen Blickwinkeln und versuche, interessante Perspektiven zu finden. Denke auch über die Anordnung der Elemente im Bild nach.</p>
+            </div>
+            <div class="card">
+                <p><strong>6. </strong>Bildbearbeitung: <br>Nachdem du ein Foto gemacht hast, kannst du es auf dem Computer oder mit Apps bearbeiten. Du kannst Kontrast, Helligkeit und Farben anpassen.</p>
+            </div>
+            <div class="card">
+                <p><strong>7. </strong>Dateiformate: <br>Fotos können in verschiedenen Formaten gespeichert werden, wie JPEG oder RAW. Einige Formate behalten mehr Details bei, sind aber größer.</p>
+            </div>
+            <div class="card">
+                <p><strong>8. </strong>Fotografie als Ausdrucksmittel: <br>Fotografie ist eine Kunstform. Du kannst deine Gedanken, Gefühle und die Welt um dich herum durch deine Fotos ausdrücken.</p>
+            </div>
+            <div class="card">
+                <p><strong>9. </strong>Praxis macht den Meister: <br>Je mehr du fotografierst, desto besser wirst du. Experimentiere mit verschiedenen Einstellungen und Motiven.</p>
+            </div>
+            <div class="card">
+                <p><strong>1o. </strong>Teilen und Feedback erhalten: <br>Teile deine Fotos mit Freunden und Familie. Du kannst auch Feedback von anderen Fotografen einholen, um dazuzulernen.</p>
+            </div>
+            
+            <div style="text-align:center">
+                <button onclick="plusSlides(-1)">❮ Zurück</button>
+                <button onclick="plusSlides(1)">Weiter ❯</button>
+            </div>
+        </div>
+
+    <div id="quiz-container">
+        <div id="quiz-feedback"></div>
+        <div class="question" id="question1">
+            <p><strong>Frage 1:</strong> <br> Was ist die Blende bei einer Kamera?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q1" value="a"> a. Ein spezielles Kameraobjektiv</div>
+                <div class="option"><input type="radio" name="q1" value="b"> b. Der Teil der Kamera, der das Bild aufnimmt</div>
+                <div class="option"><input type="radio" name="q1" value="c"> c. Die Öffnung in der Linse, die die Lichtmenge steuert</div>
+            </div>
+        </div>
+        <div class="question" id="question2">
+            <p><strong>Frage 2:</strong> <br> Was bedeutet "Fokussieren" in der Fotografie?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q2" value="a"> a. Die Kamera einschalten</div>
+                <div class="option"><input type="radio" name="q2" value="b"> b. Die Linse auf ein Objekt scharf stellen</div>
+                <div class="option"><input type="radio" name="q2" value="c"> c. Das Bild auf einen Computer übertragen</div>
+            </div>
+        </div>
+        <div class="question" id="question3">
+            <p><strong>Frage 3:</strong> <br> Welcher Teil der Kamera funktioniert wie das Auge und öffnet sich, um mehr oder weniger Licht hereinzulassen?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q3" value="a"> a. Sucher</div>
+                <div class="option"><input type="radio" name="q3" value="b"> b. Blende</div>
+                <div class="option"><input type="radio" name="q3" value="c"> c. Verschlusszeit</div>
+            </div>
+        </div>
+        <div class="question" id="question4">
+            <p><strong>Frage 4:</strong> <br> Warum ist es wichtig, die Kamera ruhig zu halten, wenn man ein Foto macht?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q4" value="a"> a. Um die Batterie zu schonen</div>
+                <div class="option"><input type="radio" name="q4" value="b"> b. Um das Bild unscharf zu machen</div>
+                <div class="option"><input type="radio" name="q4" value="c"> c. Um ein scharfes Bild zu erhalten</div>
+            </div>
+        </div>
+        <div class="question" id="question5">
+            <p><strong>Frage 5:</strong> <br> Was ist die Aufgabe der Verschlusszeit in der Fotografie?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q5" value="a"> a. Die Farben im Bild anpassen</div>
+                <div class="option"><input type="radio" name="q5" value="b"> b. Die Belichtung steuern und Bewegung einfrieren</div>
+                <div class="option"><input type="radio" name="q5" value="c"> c. Die Größe des Bildes einstellen</div>
+            </div>
+        </div>
+        <div class="question" id="question6">
+            <p><strong>Frage 6:</strong> <br> Was ist Bildbearbeitung und warum machen Fotografen das?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q6" value="a"> a. Das Entwickeln von Fotos in einem Labor</div>
+                <div class="option"><input type="radio" name="q6" value="b"> b. Die Anpassung von Kontrast, Helligkeit und Farben nach dem Fotografieren</div>
+                <div class="option"><input type="radio" name="q6" value="c"> c. Das Drucken von Fotos auf Papier</div>
+            </div>
+        </div>
+        <div class="question" id="question7">
+            <p><strong>Frage 7:</strong> Warum ist es wichtig, über die Komposition nachzudenken, wenn man ein Foto macht?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q7" value="a"> a. Um die Kamera richtig einzustellen</div>
+                <div class="option"><input type="radio" name="q7" value="b"> b. Um das Bild interessanter und ansprechender zu gestalten</div>
+                <div class="option"><input type="radio" name="q7" value="c"> c. Um die Batterie zu schonen</div>
+            </div>
+        </div>
+        <div class="question" id="question8">
+            <p><strong>Frage 8:</strong> <br> Was ist ein häufiges Dateiformat für gespeicherte Fotos?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q8" value="a"> a. MP3</div>
+                <div class="option"><input type="radio" name="q8" value="b"> b. PNG</div>
+                <div class="option"><input type="radio" name="q8" value="c"> c. JPEG</div>
+            </div>
+        </div>
+        <button onclick="checkAnswers()">Ergebnisse anzeigen</button>
+
+        <div id="quiz-feedback"></div>
+    </div>
+    <script>
+                // Add your JavaScript for the slideshow here
+                var slideIndex = 0;
+        showSlides(slideIndex);
+
+        function showSlides(index) {
+            var i;
+            var cards = document.getElementsByClassName("card");
+            
+            if (index >= cards.length) {
+                slideIndex = 0;
+            }
+            if (index < 0) {
+                slideIndex = cards.length - 1;
+            }
+            
+            for (i = 0; i < cards.length; i++) {
+                cards[i].style.display = "none";
+            }
+            
+            cards[slideIndex].style.display = "block";
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function checkAnswers() {
+            // Hier kannst du die Antworten überprüfen und die Darstellung entsprechend anpassen
+            var correctAnswers = ["c", "b", "b", "c", "b", "b", "b", "c"];
+            var totalQuestions = 8; // Gesamtanzahl der Fragen
+
+            var correctCount = 0;
+            var feedback = "<strong>Ergebnisse:</strong><br>";
+
+            for (var i = 1; i <= totalQuestions; i++) {
+                var selectedOption = document.querySelector('input[name="q' + i + '"]:checked');
+                if (selectedOption) {
+                    var userAnswer = selectedOption.value;
+                    var options = document.querySelectorAll('input[name="q' + i + '"]');
+                    var questionDiv = document.getElementById("question" + i);
+
+                    options.forEach(function (option) {
+                        if (correctAnswers[i - 1] === option.value) {
+                            option.parentNode.classList.add("correct");
+                        } else {
+                            option.parentNode.classList.add("incorrect");
+                        }
+                        option.disabled = true; // Deaktiviere die Optionen nach der Auswahl
+                    });
+
+                    if (correctAnswers[i - 1] === userAnswer) {
+                        correctCount++;
+                        feedback += "Frage " + i + ": <span class='correct'>Richtig!</span><br>";
+                    } else {
+                        feedback += "Frage " + i + ": <span class='incorrect'>Falsch!</span><br>";
+                    }
+                }
+            }
+
+            feedback += "Du hast " + correctCount + " von " + totalQuestions + " Fragen korrekt beantwortet.";
+            document.getElementById("quiz-feedback").innerHTML = feedback;
+            document.getElementById("quiz-feedback").style.display = "block";
+        }
+    </script>
+    <section id="zweite-slideshow" class="about-us">
+        <h2>1.2 Licht</h2>
+        <!-- Slideshow Container für die zweite Slideshow -->
+        <div class="slideshow-container">
+            <div class="card">
+                <p><strong>1. </strong> Intensität <br>Die Helligkeit des Lichts beeinflusst die Belichtung des Bildes. Helles Licht erzeugt kräftigere Schatten und Highlights, während schwaches Licht zu weicheren Übergängen führen kann.</p>
+            </div>
+            <div class="card">
+                <p><strong>2. </strong>Richtung <br>Die Richtung des Lichts beeinflusst den Schattenwurf und die Modellierung auf dem Motiv. Seitliches Licht kann Texturen betonen, während frontales Licht Flächen gleichmäßiger beleuchtet.</p>
+            </div>
+            <div class="card">
+                <p><strong>3. </strong>Farbtemperatur <br>Das Licht hat eine Farbtemperatur, die die Stimmung eines Bildes beeinflussen kann. Warmes Licht (z. B. bei Sonnenuntergang) erzeugt eine gemütliche Atmosphäre, während kühles Licht (z. B. bei bewölktem Himmel) kühlere Töne erzeugt..</p>
+            </div>
+            <div class="card">
+                <p><strong>4. </strong>Kontrast <br>Das Verhältnis zwischen hellen und dunklen Bereichen im Bild wird durch das Licht bestimmt. Hartes Licht erzeugt kräftigen Kontrast, während diffuses Licht zu einem weicheren Kontrast führt.</p>
+            </div>
+            <div class="card">
+                <p><strong>5. </strong>Schatten <br>Licht erzeugt Schatten, die Tiefe und Dimension hinzufügen können. Die Platzierung und Härte der Schatten hängen von der Lichtquelle ab.</p>
+            </div>
+            <div class="card">
+                <p><strong>6. </strong>Reflexionen <br>Licht kann auf Oberflächen reflektieren und zusätzliche Lichtquellen schaffen. Reflektionen können interessante visuelle Elemente in einem Bild hinzufügen.</p>
+            </div>
+            <div class="card">
+                <p><strong>7. </strong>Lichtquellen <br>Die Art der Lichtquelle beeinflusst die Farbgebung und Textur im Bild. Natürliches Licht (wie Sonnenlicht) und künstliches Licht (wie Glühlampen oder Blitzlicht) erzeugen unterschiedliche Effekte.</p>
+            </div>
+            <div class="card">
+                <p><strong>8. </strong>Goldene Stunden <br> Die Zeit kurz nach Sonnenaufgang oder vor Sonnenuntergang, bekannt als die goldene Stunde, erzeugt weiches, warmes Licht mit geringem Kontrast, was ideal für die Fotografie ist.</p>
+            </div>
+            <div class="card">
+                <p><strong>9. </strong>Blauer Stunde <br>Die Zeit kurz vor Sonnenaufgang oder nach Sonnenuntergang, die als die blaue Stunde bekannt ist, bietet ein weiches, kühles Licht mit blauen Tönen.</p>
+            </div>
+            <div class="card">
+                <p><strong>10. </strong>Lichtstimmung <br> Die Stimmung eines Bildes kann durch das Licht dramatisch verändert werden. Hartes Licht kann eine energische Atmosphäre schaffen, während weiches Licht eine ruhigere Stimmung erzeugt.</p>
+            </div>
+            <div class="card">
+                <p><strong>11. </strong>Backlighting <br>Wenn das Licht von hinten auf das Motiv fällt, entsteht Backlighting. Dies kann dazu führen, dass das Motiv dunkel erscheint, es sei denn, es wird mit Fülllicht aufgehellt.</p>
+            </div>
+            <div class="card">
+                <p><strong>12. </strong>Langzeitbelichtung <br>Durch längere Belichtungszeiten kann mehr Licht auf den Sensor gelangen, was in bestimmten Situationen, wie bei Nachtaufnahmen, nützlich ist.</p>
+            </div>
+            <div class="card">
+                <p><strong>13. </strong>Bewölktes Wetter erzeugt diffuses Licht und minimiert harte Schatten, was besonders vorteilhaft für Porträts ist.</p>
+            </div>
+            <div class="card">
+                <p><strong>14. </strong>Licht- und Schattenverlauf <br>Die Verteilung von Licht und Schatten kann die Struktur und Form des Motivs betonen.</p>
+            </div>
+            <div class="card">
+                <p><strong>15. </strong>Farbwiedergabe <br>     Das Licht beeinflusst die Farbwiedergabe im Bild. Unterschiedliche Lichtquellen können Farben verfälschen, was bei der Wahl des Weißabgleichs berücksichtigt werden sollte.</p>
+            </div>
+            <div style="text-align:center">
+                <button onclick="plusSlides2(-1)">❮ Zurück</button>
+                <button onclick="plusSlides2(1)">Weiter ❯</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Füge diesen JavaScript-Code für die neue Slideshow hinzu
+        var slideIndex2 = 0;
+        showSlides2(slideIndex2);
+    
+        function showSlides2(index) {
+            var i;
+            var cards2 = document.querySelectorAll("#zweite-slideshow .card");
+    
+            if (index >= cards2.length) {
+                slideIndex2 = 0;
+            }
+            if (index < 0) {
+                slideIndex2 = cards2.length - 1;
+            }
+    
+            for (i = 0; i < cards2.length; i++) {
+                cards2[i].style.display = "none";
+            }
+    
+            cards2[slideIndex2].style.display = "block";
+        }
+    
+        function plusSlides2(n) {
+            showSlides2(slideIndex2 += n);
+        }
+    </script>
 </section>
 
 <section id="web-development" class="about-us">
